@@ -1,0 +1,102 @@
+.footer
+    padding: 11px 0 41px 0
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &_menu
+        position: relative
+        li
+            padding-top: 28px
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            width: 301px
+            height: 7px
+            left: 54px
+            top: 11px
+            background: #1FBAD6
+
+    &_menu, &_submenu
+        list-style-type: none
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 0
+        margin: 0
+        li:not(:last-child)
+            margin-right: 48px
+    &_link
+        text-decoration: none
+        font-weight: 300
+        font-size: 15px
+        text-transform: uppercase
+        color: #070716
+    &_submenu
+        li:not(:last-child)
+            margin-right: 24px
+    &_sublink
+        text-decoration: none
+        font-weight: 300
+        font-size: 11px
+        text-transform: uppercase
+        color: #999999
+    &_lang
+        margin-top: 16px
+        text-decoration: none
+        display: block
+        text-align: center
+        font-size: 11px
+        text-transform: uppercase
+        color: #1FBAD6
+    &_social
+        width: 21%
+        &-list
+            +footer-list
+            justify-content: flex-start
+            li
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 32px
+                height: 32px
+                background: #070716
+                border-radius: 100%
+            li:not(:last-child)
+                margin-right: 4px
+        &-link
+            text-decoration: none
+            display: flex
+            
+        
+    &_store
+        width: 23%
+        &-list
+            +footer-list
+            justify-content: flex-end
+            li
+            li:not(:last-child)
+                margin-right: 4px
+        &-link
+            display: block
+            text-decoration: none
+            width: 94px
+            object-fit: cover
+            img
+                width: 100%
+                height: 28px
+                
+.icon-facebook:before, .icon-instagram:before, .icon-twitter:before, .icon-linkedin:before 
+    color: #fff
+
+@media (max-width: 991px)
+    .footer
+        &_social
+            &-list
+                margin-left: 10px
+        &_store
+            &-list
+                margin-right: 10px
+            &-link
+                width: 83px
