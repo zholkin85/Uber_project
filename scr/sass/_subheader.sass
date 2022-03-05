@@ -47,3 +47,36 @@
             width: 150px
             height: 40px
             font-size: 12px
+
+@media (max-width: 767px)
+    .subheader
+        margin: -1px
+        .xs-hidden
+            display: none
+        .xs-visible
+            display: block
+        &_call-phone
+            display: block
+            margin-top: 8px
+            font-size: 15px
+            line-height: 0
+            text-align: center
+        &_btn
+            display: block
+            margin: 0 auto
+            margin-top: 15px
+            width: 75%
+            height: 40px
+
+@media (max-width: 575px)
+    .subheader
+        &_logo
+            margin-top: 7px
+        &_logo-discr
+            display: none
+        &_call-phone
+            font-size: 12px
+        &_btn
+            width: 55%
+            height: 22px
+            font-size: 10px
